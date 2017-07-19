@@ -1,0 +1,53 @@
+﻿<div data-options="dxView : { name: 'unidade_selected', title: 'Unidades' } ">
+    <div data-options="dxContent : { targetPlaceholder: 'content' } " class="dx-content-background view-unidade-selected">
+
+        <div id="nomeUnidade" data-bind="text: nomeUnidade"></div>
+        <div id="scrollunidade" data-bind="dxScrollView: { }">
+
+
+            <div>
+                <img id="imagemUnidade" data-bind="attr: {src: imagem}" />
+            </div>
+            <div class="form-unidade-selectd">
+                <h4 class="fa fa-thumb-tack" id="id-endereco"> Endereço: </h4>
+                <div id="endereco" data-bind="text: endereco "></div>
+                <h4 class="fa fa-calendar" id="id-titulo"> Horário de atendimento: </h4>
+                <div id="atendimentosemanal" data-bind="text: atendimentosemanal"></div>
+                <!--<div id="atendimentofinaldesemana" data-bind="text: atendimentofinaldesemana"></div>-->
+
+
+                <h4 class="fa fa-home" id="id-opcoes"> Diferencial: </h4><br />
+
+
+
+                <!--<div id="div-itens">
+                    <p> <img id="imagemcheck" data-bind="attr: {src: checkAcessibilidade}" /> <span data-bind="text:  'Acessibilidade'"></span></p>
+                    <p> <img id="imagemcheck" data-bind="attr: {src: checkColeta}" /> <span data-bind="text: 'Coleta Infantil'"></span></p>
+                    <p> <img id="imagemcheck" data-bind="attr: {src: checkEstacionamento}" /> <span data-bind="text: 'Estacionamento'"></span></p>
+                    <p> <img id="imagemcheck" data-bind="attr: {src: checkCafe}" /> <span data-bind="text: 'Lab Café'"></span></p>
+
+                </div>-->
+
+
+                <div id="div-itens">
+                    <img id="imagemcheck" data-bind="attr: {src: checkAcessibilidade}" /> Acessibilidade <br />
+                    <img id="imagemcheck" data-bind="attr: {src: checkColeta}" /> Coleta Infantil 
+                </div>
+                <div id="div-itens2">
+                    <img id="imagemcheck" data-bind="attr: {src: checkEstacionamento}" /> Estacionamento <br />
+                    <img id="imagemcheck" data-bind="attr: {src: checkCafe}" /> Lab Café
+                </div>
+
+                <div id="div-botaolocalizacao">
+                    <h4 class="fa fa-map-marker" id="id-titulo"> Como chegar? </h4><br />
+                    <div id="localizacaounidade" data-bind="dxButton: mapa "></div>
+                </div>
+                <div id="div-botaotelefone">
+                    <h4 class="fa fa-phone" id="id-titulo"> Telefone: </h4><br />
+                    <div id="telefoneunidade" data-bind="dxButton: telefone"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

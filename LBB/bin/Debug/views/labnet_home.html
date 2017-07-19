@@ -1,0 +1,21 @@
+﻿<div data-options="dxView : { name: 'labnet_home', title: 'Resultados' } ">
+    <div data-bind="dxCommand: { id: 'logout', title: 'Sair', onExecute: desconectar } "></div>
+    <div id="boxhomeresult" class="dx-content-background" data-options="dxContent : { targetPlaceholder: 'content' } ">
+
+        <div class="dx-searchbar">
+            <div data-bind="dxTextBox: searchOptions"></div>
+        </div>
+                <div class="loadpanel" data-bind="dxLoadPanel: loadOptions"></div>
+                <h5> Clique na requisição para vizualizar o resultado</h5>
+                <div id="listCliente" data-bind="dxList: {dataSource: listDataSource, onItemClick: clickRequisicao,  pullRefreshEnabled: pullRefresh}">
+                    <div id="itemLista" data-options="dxTemplate: {name: 'item'}">
+
+                        <span>Requisição: </span><b data-bind="text: NumeroRequisicao "></b>
+                        <p>Data: <i data-bind="text: DataRequisicao"></i></p>
+                        <p>Procedência: <i data-bind="text: ProcedenciaRequisicao"></i>  </p>
+                        <p>Médico: <i data-bind="text: MedicoRequisicao"></i>  </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>

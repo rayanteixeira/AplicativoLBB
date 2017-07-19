@@ -1,0 +1,14 @@
+﻿<div data-options="dxView : { name: 'unidade_screen', title: 'Unidades' } ">
+    <div data-options="dxContent : { targetPlaceholder: 'content' } " class="dx-content-background">
+        
+        <div data-bind="dxLoadPanel: loadOptions"></div>
+        <div data-bind="dxList: {dataSource: listDataSource, height: '100%', grouped: true, collapsibleGroups: collapseGroups,  onItemClick: clickUnidade}">
+            <div data-options="dxTemplate: {name: 'item'}">
+                <div>
+                    <span>UNIDADE</span>
+                    <span data-bind="text: Descricao "></span>
+                </div>          
+            </div>
+        </div>
+   </div>
+</div>

@@ -1,0 +1,46 @@
+﻿<div data-options="dxView : { name: 'labdoutor_login', title: 'Acesso médico' } ">
+    <div id="boxdoutor" class="doctor-view dx-content-background" data-options="dxContent : { targetPlaceholder: 'content' } ">
+        <div id="scroll-labdoutorlogin" data-bind="dxScrollView: {showScrollbar: 'never',
+             useNative: false}">
+            <div id="div_imagem_login_labdoutor">
+                <img id="img_doctor" src="views/imagens/lab-doutor.jpg" />
+            </div>
+
+            <div id="entrada_de_dados_login_labdoutor">
+                <spam> Login: </spam>
+
+                <div>
+                    <div id="CR_SelectBox" data-bind="dxSelectBox: CR"></div>
+                    <div id="CR_Medico" data-bind="dxTextBox: {
+                               placeholder: userPlaceholder,
+                               value: login,
+                               mode: 'tel',
+                               maxLength: 20 },
+                               dxValidator: uservalidade"></div>
+                </div>
+                </br>
+
+                <spam> Senha: </spam>
+                <div data-bind="dxTextBox: {value : senha,
+                                mode: 'password',
+                               placeholder: passwordPlaceholder,
+                               maxLength: 30 },
+                               dxValidator: passwordvalidade"></div>
+            </div>
+
+            <div class="loadpanel" data-bind="dxLoadPanel: loadOptions"></div>
+            <div id="botoes_footer_labdoutor">
+                <div id="checkbox-login-doctor" data-bind="dxCheckBox: checkboxlogindoctor"></div>
+                <div id="btn-loginDoctor" data-bind="dxButton: {
+                    text: 'Entrar',
+                    type: 'danger',
+                    onClick: validateAndSubmit
+                }"></div>
+
+                <h6> *Informe seu conselho e senha.</h6>
+                <!--<h6><a href="#">Esqueci minha senha.</a></h6>-->
+
+                </div>
+            </div>
+        </div>
+</div>

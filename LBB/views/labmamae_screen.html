@@ -1,0 +1,35 @@
+﻿<div data-options="dxView : { name: 'labmamae_screen', title: 'Para Gestantes' } ">
+    <div class="view-mama-screen dx-content-background" data-options="dxContent : { targetPlaceholder: 'content' } ">
+     
+       <div id="scroll-mama" data-bind="dxScrollView: { }">
+            <div class="cabeçalho">
+                <img id="imgmama" src="views/imagens/lab_mamae.jpg" />
+                <p id="textolabmamae" data-bind="html: textolabmamae"></p>
+            </div>
+
+            <div id="conteudo">
+
+                      <img id="foto1" src="views/imagens/labmamae-foto1.jpg" />
+                      <p id="texto-foto1" data-bind="html: texto1"></p>
+                      <img id="foto2" src="views/imagens/labmamae-foto2.jpg" />
+                      <p id="texto-foto2" data-bind="html: texto2"></p>
+                      <img id="foto3" src="views/imagens/labmamae-foto3.jpg" />
+                      <p id="texto-foto3" data-bind="html: texto3"></p>
+
+               
+            </div>
+
+            <div id="contatoslabmamae">
+                <div id="div-botaoemaillabmamae">
+                    <!--<h4  id="id-titulo"> Email: </h4><br />-->
+                    <div id="botaoemaillabmamae" data-bind="dxButton:  emailmamae "></div>
+                </div>
+                <div id="div-botaotelefonemamae">
+                    <!--<h4  id="id-titulo"> Telefone: </h4><br />-->
+                    <div id="botaotelefonemamae" data-bind="dxButton: telefonemamae "></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

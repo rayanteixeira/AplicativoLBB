@@ -1,0 +1,21 @@
+﻿<div data-options="dxView : { name: 'labdoutor_home', title: 'Acesso Médico' } ">
+    <div data-bind="dxCommand: { id: 'logout', title: 'Sair', onExecute: desconectardoctor } "></div>
+    <div id="boxmedicoresult" data-options="dxContent : { targetPlaceholder: 'content' } " class="dx-content-background">
+  
+         <div class="dx-searchbar">
+            <div data-bind="dxTextBox: searchOptions"></div>
+        </div>
+        <div class="loadpanel" data-bind="dxLoadPanel: loadOptions"></div>
+        <h5> Clique no paciente para visualizar o resultado</h5>
+        <div id="listDoutor" data-bind="dxList: {dataSource: listDataSource,  onItemClick: clickRequisicao, pullRefreshEnabled: pullRefresh}">
+            <div id="itemNomePaciente" data-options="dxTemplate: {name: 'item'}">
+
+                <span>Paciente: </span><b data-bind="text: NomePaciente"></b>
+                <p>Requisição: <i data-bind="text: NumeroRequisicao"></i> </p>
+                <p>Data: <i data-bind="text: DataRequisicao"></i></p>
+                <p>Procedência: <i data-bind="text: ProcedenciaRequisicao"></i>  </p>
+
+            </div>
+        </div>   
+      </div>
+ </div>

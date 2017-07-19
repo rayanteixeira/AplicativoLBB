@@ -1,0 +1,989 @@
+﻿/*-------------------------------------*/
+            /*TELA HOME*/
+/*-------------------------------------*/
+.home-view  {  
+    width: 100%;
+    height: 100%;
+
+}
+
+#imagemlogo{
+    width: 100%; 
+    height: 23%;
+    
+}
+
+#imagemlogo > img {
+    
+    display: block;
+    width: 80%; 
+    height: 70%;
+    margin-left:10%;
+    margin-right:10%;
+    margin-top: 10%;
+    padding-top: 8%
+}
+
+.botoes-home {    
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4%;
+  
+}
+
+.botoes-home div{
+    display: block;
+    margin-top: 5%;
+    margin-bottom: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    font:bold 14px "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-style:normal;
+    color:#dc911b;
+    background-color: #ff9900;
+    /*background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmY2MwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZjY2MDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);*/
+    border:0px inset #ffffff;
+    /*text-shadow:0px -1px 0px #222222;
+    box-shadow:2px 2px 0px #000000;
+    -moz-box-shadow:2px 2px 0px #000000;
+    -webkit-box-shadow:2px 2px 0px #000000;*/
+    border-radius:30px 30px 30px 30px;
+    -moz-border-radius:30px 30px 30px 30px;
+    -webkit-border-radius:30px 30px 30px 30px;
+}
+
+#btnIMG_exames{
+    display: block;
+    margin-bottom: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    width:85%;
+    height: 8%;
+}
+#btnIMG_exames:hover {
+    /*-moz-box-shadow: 0 0 10px #ccc; 
+    -webkit-box-shadow: 0 0 10px #ccc; 
+    box-shadow: 0 0 10px #ccc; */
+    -webkit-box-shadow: 0px 0px 0px 2px rgba(255,153,0,1);
+    -moz-box-shadow: 0px 0px 0px 2px rgba(255,153,0,1);
+    box-shadow: 0px 0px 0px 2px rgba(255,153,0,1);
+}
+
+#btnIMG_medico{
+    display: block;
+    margin-bottom: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    width:85%;
+    height: 8%;
+}
+#btnIMG_medico:hover {
+    /*-moz-box-shadow: 0 0 10px #ccc; 
+    -webkit-box-shadow: 0 0 10px #ccc; 
+    box-shadow: 0 0 10px #ccc; */
+    -webkit-box-shadow: 0px 0px 0px 2px rgba(255,153,0,1);
+    -moz-box-shadow: 0px 0px 0px 2px rgba(255,153,0,1);
+    box-shadow: 0px 0px 0px 2px rgba(255,153,0,1);
+}
+
+#btnIMG_coleta{
+    display: block;
+    margin-bottom: 8px;
+    margin-left: auto;
+    margin-right: auto;
+     width:85%;
+    height: 8%;
+}
+#btnIMG_coleta:hover {
+    /*-moz-box-shadow: 0 0 10px #ccc; 
+    -webkit-box-shadow: 0 0 10px #ccc; 
+    box-shadow: 0 0 10px #ccc; */
+    -webkit-box-shadow: 0px 0px 0px 2px rgba(255,153,0,1);
+    -moz-box-shadow: 0px 0px 0px 2px rgba(255,153,0,1);
+    box-shadow: 0px 0px 0px 2px rgba(255,153,0,1);
+}
+
+#btnIMG_unidades {
+    display: block;
+    margin-bottom: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    width:85%;
+    height: 8%;
+}
+#btnIMG_unidades:hover {
+    /*-moz-box-shadow: 0 0 10px #ccc; 
+    -webkit-box-shadow: 0 0 10px #ccc; 
+    box-shadow: 0 0 10px #ccc; */
+    -webkit-box-shadow: 0px 0px 0px 2px rgba(255,153,0,1);
+    -moz-box-shadow: 0px 0px 0px 2px rgba(255,153,0,1);
+    box-shadow: 0px 0px 0px 2px rgba(255,153,0,1);
+}
+
+#btnIMG_labMamae {
+    display: block;
+    margin-bottom: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    width:85%;
+    height: 8%;
+}
+#btnIMG_labMamae:hover {
+    /*-moz-box-shadow: 0 0 10px #ccc; 
+    -webkit-box-shadow: 0 0 10px #ccc; 
+    box-shadow: 0 0 10px #ccc; */
+    -webkit-box-shadow: 0px 0px 0px 2px rgba(255,153,0,1);
+    -moz-box-shadow: 0px 0px 0px 2px rgba(255,153,0,1);
+    box-shadow: 0px 0px 0px 2px rgba(255,153,0,1);
+}
+
+#btnIMG_outrosServicos{
+    display: block;
+    margin-bottom: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    width:85%;
+    height: 8%;
+
+}
+#btnIMG_outrosServicos:hover {
+    /*-moz-box-shadow: 0 0 10px #ccc; 
+    -webkit-box-shadow: 0 0 10px #ccc; 
+    box-shadow: 0 0 10px #ccc; */
+    -webkit-box-shadow: 0px 0px 0px 2px rgba(255,153,0,1);
+    -moz-box-shadow: 0px 0px 0px 2px rgba(255,153,0,1);
+    box-shadow: 0px 0px 0px 2px rgba(255,153,0,1);
+}
+
+#informacoes{
+    height: 28px;
+    width: 28px;
+    bottom: 3%;
+    position: absolute;
+    margin-right: 4%;
+    right: 0
+}
+
+#bonecos-lbb > img {
+    width: 60%;
+    height: 12%;
+    position: absolute;
+	bottom: 2%;
+    margin-left: 20%
+}
+
+#redesSociaishome{
+    position: absolute;
+    bottom: 0;
+}
+
+#redesSociaishome img {
+    height: 9%;
+    width: 14%;
+    padding-bottom: 10%;
+    margin-left:3%;
+    margin-right:3%;
+   
+}
+
+
+
+/*-------------------------------------*/
+            /*TELA LABNET-LOGIN*/
+/*-------------------------------------*/
+.exams-view {
+    width: 100%;
+    height: 100%;
+  
+}
+
+#div_imagem_exame_login > #img_exams {
+    height: 40%;
+    width: 100%;
+    /*border-radius: 10px;*/ 
+    
+}
+
+#entrada_de_dados_login_exames > spam {
+    
+    font:bold 14px "Palatino Linotype", "Book Antiqua", Palatino, serif;
+
+}
+#entrada_de_dados_login_exames{
+    margin: 8%;
+    margin-top: 0px;
+    margin-bottom: 2%; 
+}
+
+#entradadeDadosLoginExames > div {
+    padding-top: 2px;
+    padding-bottom: 3px;
+   
+}
+
+#botoes_footer_exames{
+
+}
+
+#checkbox-login-exams{
+    padding-left:8%;
+}
+
+.dx-widget {
+    font-size: 12px;    
+}
+
+/*.dx-checkbox-icon{
+   width: 20px;
+   height: 20px;
+    border-color:  rgba(204, 90, 37, 1);
+}
+*/ 
+
+#botoes_footer_exames h6 {
+    color: darkcyan;
+    margin-top: 5px;
+    font-size: 10px;
+    margin-left: 8%;
+}
+
+#btn-entrarExams{
+    width: 130px;
+    display: block;
+    margin-top: 5%;
+    margin-bottom: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: thin;
+    border-style: solid;
+    background-color:rgba(255, 153, 0, 1);
+    /*background-color: rgba(204, 90, 37, 1);*/
+    border-color: rgba(255, 153, 0, 1);
+    border-radius:20px 20px 20px 20px;
+    -moz-border-radius:20px 20px 20px 20px;
+    -webkit-border-radius:20px 20px 20px 20px;
+
+
+}
+
+#scroll-labnetlogin{
+   height: 99%;
+   /*padding-bottom: 10px;*/
+}
+/*#campoSenhaLabnet {
+    -webkit-text-security: disc;
+}*/
+
+
+
+
+/*-------------------------------------*/
+            /*TELA LABNET-HOME*/
+/*-------------------------------------*/
+
+h2 {
+    text-align:center;
+    color: coral;
+}
+
+#itemVisualuzar{
+    height: 100px;
+    float: right;
+    background-color: brown;
+}
+
+#itemLista > b{
+    color: chocolate;
+    
+}
+
+#boxhomeresult > h5 {
+    margin-left : 5%;
+    color: cornflowerblue;
+}
+
+#listCliente{
+    height: 90%
+} 
+
+
+
+/*-------------------------------------*/
+            /* TELA LABDOUTOR-LOGIN*/
+/*-------------------------------------*/
+
+.doctor-view {
+    width: 100%;
+    height: 100%;
+}
+
+
+#div_imagem_login_labdoutor > #img_doctor {
+    height: 40%;
+    width: 100%;
+    /*border-radius: 10px;*/ 
+    
+}
+
+#entrada_de_dados_login_labdoutor > spam {
+    /*color: rgba(0, 188, 212, 1);*/
+    font:bold 14px "Palatino Linotype", "Book Antiqua", Palatino, serif;
+
+}
+#entrada_de_dados_login_labdoutor{
+    margin: 8%;
+    margin-top: 0px;
+    margin-bottom: 2%; 
+
+    
+}
+#entrada_de_dados_login_labdoutor > div {
+    padding-top: 2px;
+    padding-bottom: 3px;
+   
+}
+
+#checkbox-login-doctor{
+    padding-left:8%;
+}
+
+.dx-widget {
+    font-size: 12px;    
+}
+
+.dx-checkbox-icon{
+   width: 20px;
+   height: 20px; 
+}
+
+#botoes_footer_labdoutor h6 {
+    color: darkcyan;
+    margin-top: 0px;
+    font-size: 10px;
+    margin-left: 8%;
+}
+
+#botoes_footer_labdoutor > #btn-loginDoctor{
+    width: 130px;
+    display: block;
+    margin-top: 4%;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: thin;
+    border-style: solid;
+    margin-bottom: 10px;
+    /*border-color: #D54800;*/
+    /*border-color:rgba(204, 90, 37, 1); */
+    border-color: rgba(0, 188, 212, 1);
+    background-color: rgba(0, 188, 212, 1);
+    border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+
+}
+
+#CR_Medico {
+    float: left;
+    width: 63%
+}
+
+#CR_SelectBox {
+    float: left;
+    width: 29%;
+  
+}
+
+#scroll-labdoutorlogin{
+   height: 99%;
+   /*padding-bottom: 10px;*/
+}
+
+
+
+/*-------------------------------------*/
+            /* TELA LABDOUTOR-HOME*/
+/*-------------------------------------*/
+h2 {
+    text-align: center;
+    color: coral;
+}
+
+#itemNomePaciente > b{
+    color: chocolate;
+    
+}
+
+#boxmedicoresult > h5 {
+    margin-left : 5%;
+    color: cornflowerblue;
+}
+
+#listDoutor{
+   height: 90%;
+}
+
+
+
+/*-------------------------------------*/
+            /* TELA LABCOLETA-LOGIN*/
+/*-------------------------------------*/
+
+.labcoleta-view {  
+    width: 100%;
+    height: 100%;
+}
+
+
+#div_imagem_labcoleta > #imgloginlabcoleta {
+    height: 44%;
+    width: 100%;
+    /*border-radius: 10px;*/ 
+    
+}
+
+#entrada_de_dados_login_labcoleta{
+    margin: 8%;
+    margin-top: 0px;
+    margin-bottom: 2%;
+    
+}
+#entrada_de_dados_login_labcoleta > spam {
+    
+    /*color: rgba(204, 90, 37, 1);*/
+    font:bold 14px "Palatino Linotype", "Book Antiqua", Palatino, serif;
+
+}
+#entrada_de_dados_login_labcoleta > div {
+    padding-top: 2px;
+    padding-bottom: 3px;
+   
+}
+
+#checkbox-loginlabcoleta {
+    padding-left:8%;
+}
+
+.dx-widget {
+    font-size: 12px;    
+}
+
+.dx-checkbox-icon{
+   width: 20px;
+   height: 20px;
+}
+
+#botoes_footer_labcoleta h6{
+    color: darkcyan;
+    margin-top: 5px;
+    font-size: 10px;
+    margin-left: 8%;
+}
+
+#btn-entrarAgendaLogin {
+    margin-top: 4%;
+    width: 30%;
+    border-width: thin;
+    border-style: solid;
+    border-color:   #f6da3f;
+    /*background-color: rgba(204, 90, 37, 1);*/
+    background-color:  #f6da3f;
+    border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+}
+
+#btn-cadastrarAgendaLogin {
+    margin-top: 4%;
+    width: 66%;
+    border-width: thin;
+    border-style: solid;
+    border-color:  #f6da3f;
+    float: right;  
+     background-color:  #f6da3f;
+    /*background-color: rgba(204, 90, 37, 1);*/
+    border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+}
+
+#botoes_footer_labcoleta > #div-botoes{
+  
+  margin-left: 4%;
+  margin-right: 4%;
+  
+}
+
+#scroll-labcoletalogin{
+   height: 100%;
+   /*padding-bottom: 10px;*/
+}
+
+
+/*-------------------------------------*/
+       /* TELA LABCOLETA-FORMULÁRIO*/
+/*-------------------------------------*/
+
+.dx-fieldset-header{
+    color: #D54800;  
+}
+ 
+div #imglabcoleta {
+    width: 100%;
+    height: 100%;
+    border-radius:10px;
+}
+
+#btn-enviarform  {
+    border-width: thin;
+    border-style: solid;
+    border-color: #D54800;
+    border-radius: 8px;
+   
+
+    background-color:  #D54800;
+    width: 60%;
+    height: 40px;
+    display: block;
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+#botoabuscarCep {
+    /*background-color:  #D54800;*/
+    border-radius: 2px;
+}
+
+#ddd{
+    width: 14%;
+    float: left;
+}
+
+#telefone{
+    width: 40%;
+    float: left;
+    margin-left: 5px;
+}
+
+
+
+
+/*-------------------------------------*/
+       /* TELA LABMAMÃE*/
+/*-------------------------------------*/
+
+ /*color: rgba(207, 86, 21, 1);
+     color: #696969;
+ */
+.view-mama-screen {
+    width: 100%;
+    height: 100%;
+ }
+
+.cabeçalho > #imgmama {
+    height: 40%;
+    width: 100%;
+    /*border-radius: 10px;*/
+}
+.cabeçalho > #textolabmamae {
+    text-align: justify;
+    font-family: Calibri;
+    padding: 10px;
+}
+
+#foto1 {
+     /*borda*/
+     box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+
+   
+
+   width: 150px;
+	height: 150px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+
+    display: block;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#texto-foto1 {
+     
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-bottom: 50px;
+    font-size: 15px;
+    text-align: justify;
+     font-family: Calibri;
+    
+}
+
+#foto2{
+    /*borda*/
+     box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+
+   width: 150px;
+	height: 150px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    
+   
+    /*centralizando*/
+    display: block;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#texto-foto2 {
+   
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-bottom: 50px;
+    font-size: 15px;
+    text-align: justify;
+     font-family: Calibri;
+    
+}
+
+#foto3{
+     /*borda*/
+     box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+
+    width: 150px;
+	height: 150px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+
+    display: block;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+   
+#texto-foto3 {
+    
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-bottom: 50px;
+    font-size: 15px;
+    text-align: justify;
+    font-family: Calibri;
+  
+
+}
+
+#conteudo p {
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#div-botaoemaillabmamae {
+   
+    height: 20%;
+    width: 35%;
+    margin-left: 5%;
+    float: left;
+    margin-bottom: 10px;
+  
+}
+#div-botaoemaillabmamae #botaoemaillabmamae{
+    border-width: thin;
+    border-style: solid;
+    /*border-color: rgba(204, 90, 37, 1);*/
+      border-color: rgba(255, 153, 0, 1);
+    /*border-radius: 8px;*/
+      background-color: rgba(255, 153, 0, 1);
+    /*background-color: rgba(204, 90, 37, 1);*/
+    width: 100%;
+     font-family: Calibri;
+    border-radius:30px 30px 30px 30px;
+    -moz-border-radius:30px 30px 30px 30px;
+    -webkit-border-radius:30px 30px 30px 30px;
+}
+
+#div-botaotelefonemamae{
+   
+    height: 20%;
+    width: 45%;
+    margin-left: 6%;
+    float: left;
+    margin-bottom: 10px;
+    
+    
+}
+#div-botaotelefonemamae #botaotelefonemamae{
+    border-width: thin;
+    border-style: solid;
+    /*border-color: rgba(204, 90, 37, 1);*/ 
+  border-color: rgba(255, 153, 0, 1);
+    /*border-radius: 8px;*/
+    /*background-color: rgba(204, 90, 37, 1);*/
+    background-color:rgba(255, 153, 0, 1);
+    width: 100%;
+     font-family: Calibri;
+     border-radius:30px 30px 30px 30px;
+    -moz-border-radius:30px 30px 30px 30px;
+    -webkit-border-radius:30px 30px 30px 30px;
+}
+
+
+/*-------------------------------------*/
+       /* TELA UNIDADES*/
+/*-------------------------------------*/
+#listaunidades {
+    padding-bottom: 40px;
+    
+}
+
+
+
+/*-------------------------------------*/
+       /* TELA UNIDADES SELECIONADA*/
+/*-------------------------------------*/
+
+.form-unidade-selectd {
+    padding: 5px;
+}
+
+#scrollunidade{
+    height: 90%;
+   
+}
+
+#imagemUnidade {
+    width: 100%;
+    height: 40%;
+   
+  }
+
+#nomeUnidade{
+    width: 100%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 5px;
+    color: white;
+    font-size: 16px;
+    background-color: rgba(255, 153, 0, 1);
+
+
+}
+
+#id-titulo{
+    margin-top: 5px;
+    color: #D54800;
+    font-size: 16px;
+
+}
+
+#id-endereco{
+    
+    color: #D54800;
+    font-size: 16px;
+
+}
+
+#endereco {
+    font-size: 12px;
+}
+
+#atendimentosemanal {
+    font-size: 12px;
+}
+
+#id-opcoes{
+    margin-top: 5px;
+    color: #D54800;
+    font-size: 16px;
+    
+    
+}
+
+#imagemcheck {
+    height: 10px;
+    width:10px;
+  
+    
+   
+}
+
+#div-itens{
+    
+    margin-left: 2%;
+    height: 20%;
+    width: 40%;
+    float:left;
+    
+      
+}
+
+#div-itens2{
+   
+    margin-left: 7%;
+    height: 20%;
+    width: 45%;
+    float: left;
+    
+}
+
+#div-botaolocalizacao{
+    margin-left: 4%;
+    height: 20%;
+    width: 40%;
+    float:left;
+     
+   
+}
+#div-botaotelefone{
+    margin-left: 4%;
+    height: 20%;
+    width: 48%;
+    float: left;
+  
+}
+
+#localizacaounidade {
+   
+    width:100%;
+    border-width: thin;
+    border-style: solid;
+    border-color: rgba(255, 153, 0, 1);
+    border-radius: 2px;
+    /*background-color: rgba(255, 153, 0, 1);*/ 
+    border-radius: 20px 20px 20px 20px;
+    -moz-border-radius:20px 20px 20px 20px;
+    -webkit-border-radius:20px 20px 20px 20px;
+}
+
+#telefoneunidade {
+    margin-left: 5%;
+    width:100%;
+   
+    border-width: thin;
+    border-style: solid;
+    border-color: rgba(255, 153, 0, 1);
+    border-radius: 8px;
+    /*background-color: rgba(255, 153, 0, 1);*/   
+    border-radius:20px 20px 20px 20px;
+    -moz-border-radius:20px 20px 20px 20px;
+    -webkit-border-radius:20px 20px 20px 20px;
+}
+
+
+
+/*-------------------------------------*/
+       /* TELA SOBRE(ABOUT)*/
+/*-------------------------------------*/
+
+
+#imagemlogosobre > img {
+   display: block;
+    width: 80%; 
+    height: 70%;
+    margin-left:10%;
+    margin-right:10%;
+  
+    padding-top: 5%;
+}
+
+#textoLBB{
+    margin-top: 5%;
+    text-align: justify;
+    font-family: Calibri;
+    padding: 10px;
+}
+
+#btn-centralAtendimento{
+    width: 50%;
+    display: block;
+    margin-top: 1%;
+    margin-bottom: 8%;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: thin;
+    border-style: solid;
+    background-color: rgba(255, 153, 0, 1);
+    border-color: rgba(255, 153, 0, 1);
+
+    border-radius:30px 30px 30px 30px;
+    -moz-border-radius:30px 30px 30px 30px;
+    -webkit-border-radius:30px 30px 30px 30px;
+
+
+}
+
+#centralAtendimento {
+   
+    font-family: Calibri;
+    margin-bottom: 0px;
+    color: #D54800;
+}
+
+#redesSociais {
+    
+    position: center;
+    bottom: 5%;
+    
+    width:100%;
+    
+    
+}
+#redesSociais #abrinq {
+   left: 0;
+   height: 15%;
+   width: 25%;
+   float: left;
+   margin-top: 6%;
+   
+}
+#redesSociais #pelm {
+    height: 15%;
+    width: 20%;
+    margin-top: 6%;
+    position: center;
+}
+#redesSociais #anima {
+    height: 15%;
+    width: 19%;
+    float: right;
+    margin-top: 6%;
+    margin-right: 2%;
+}
+#redesSociais #heliooliveira {
+    height: 13%;
+    width: 25%;
+    float: right;
+    margin-top: 9%;
+    margin-right: 2%;
+}
+
+#textoredesSociais{
+    font-family: Calibri;
+    margin-bottom: 0px;
+    color: #D54800;
+}
+
+div > #versao{
+  
+    
+    position: absolute;
+    bottom: -30px;
+    left:40%;
+    right:40%;
+    
+}

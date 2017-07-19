@@ -1,0 +1,41 @@
+﻿<div data-options="dxView : { name: 'labnet_login', title: 'Resultados de exames' } ">
+    <div id="boxMain" class="exams-view dx-content-background" data-options="dxContent : { targetPlaceholder: 'content' } ">
+       
+      
+        <div id="scroll-labnetlogin" data-bind="dxScrollView: { showScrollbar: 'never', useNative: false}">
+            <div id="div_imagem_exame_login">
+                <img id="img_exams" src="views/imagens/resultados-de-exames2.jpg" />
+            </div>
+
+            <div id="entrada_de_dados_login_exames">
+                <spam> Login: </spam>
+                <div id="edt_login" data-bind="dxTextBox: {
+                               placeholder: userPlaceholder,
+                               value: usuario,              
+                               maxLength: 40 },
+                               dxValidator: uservalidade"></div>
+                <spam> Senha: </spam>
+                <div id="campoSenhaLabnet" data-bind="dxTextBox: {value : senha,
+                               mode: 'password',
+                               placeholder: passwordPlaceholder,
+                               maxLength: 40},
+                               dxValidator: passwordvalidade"></div>
+            </div>
+
+            <div class="loadpanel" data-bind="dxLoadPanel: loadOptions"></div>
+            <div id="botoes_footer_exames">
+                <div id="checkbox-login-exams" data-bind="dxCheckBox: checkboxloginexams"></div>
+                <div id="btn-entrarExams" data-bind="dxButton: {
+                    text: 'Entrar',
+                    type: 'danger',
+                    onClick: validateAndSubmit
+                }"></div>
+
+
+                <h6> *Informe o login e senha presentes no seu protocolo.</h6>
+                <!--<h6><a href="#">Esqueci minha senha.</a></h6>-->
+
+            </div>
+        </div>
+        </div>
+</div>

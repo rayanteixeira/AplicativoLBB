@@ -1,0 +1,161 @@
+﻿<div data-options="dxView : { name: 'labcoleta_form', title: 'Coleta Domiciliar' } ">
+    <div class="view-agenda_screen dx-content-background" data-options="dxContent : { targetPlaceholder: 'content' } ">
+
+
+
+        <div id="scroll" data-bind="dxScrollView: { }">
+            <div class="form">
+                        
+                <div class="dx-fieldset">
+                    <div class="dx-fieldset-header">Dados do plano de saúde (se houver)</div>
+                    <div class="dx-field">
+                        <h4>Você tem plano de saúde ?</h4>
+                        <div data-bind="dxRadioGroup: valorPlanodeSaude"></div>
+                        <!--Convênio: <div data-bind="dxTextBox: valorConvenio"></div>-->
+                        Plano: <div data-bind="dxTextBox: valorPlano "></div>
+                        Nº carteira do plano: <div data-bind="dxTextBox: valorNumCarteira "></div>
+                    </div>
+                </div>
+                <br />
+                <div class="loadpanel" data-bind="dxLoadPanel: loadOptions"></div>
+                <div class="dx-fieldset">
+                    <div class="dx-fieldset-header">Endereço de coleta</div>
+                    <div class="dx-field">
+                        <div class="dx-field-label">CEP:</div>
+                        <div class="dx-field-value" data-bind="dxTextBox: valorCep"></div>
+                    </div>
+                    <div id="botoabuscarCep" data-bind="dxButton: {
+                             text: 'buscar',
+                             type: 'danger',
+                             onClick: botaoBuscarCep
+                             }"></div>
+                    <br />
+                    <br />
+
+
+                    <div class="dx-field">
+                        Endereço completo: <div data-bind="dxTextBox: valorEndereco, dxValidator: campoObrigatorio "></div>
+                    </div>
+                     
+                    <div class="dx-field">
+                        Perímetro: <div  data-bind="dxTextBox: { value: perimetroCliente, 
+                                                                onValueChanged: valorPerimetro,
+                                                                maxLength: 100}"></div>
+                    </div>
+                             
+                    <div class="dx-field">
+                        <div class="dx-field-label">UF:</div>
+                        <div class="dx-field-value" data-bind="dxSelectBox: valorUF, dxValidator: campoObrigatorio "></div>
+
+                    </div>
+                    <div class="dx-field">
+                        <div class="dx-field-label">Cidade:</div>
+                        <div class="dx-field-value" data-bind="dxTextBox: valorCidade, dxValidator: campoObrigatorio "></div>
+
+                    </div>
+                    <div class="dx-field">
+                        <div class="dx-field-label">Bairro:</div>
+                        <div class="dx-field-value" data-bind="dxTextBox: valorBairro, dxValidator: campoObrigatorio ">                  
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <!--<div class="loadpanel" data-bind="dxLoadPanel: loadOptions"></div>-->
+                <div class="dx-fieldset">
+
+                    <div class="dx-fieldset-header">Dados Cadastrais</div>
+
+                    <div class="dx-field">
+                        <div>Nome completo do paciente:</div>
+                        <div data-bind="dxTextBox: valorNomePaciente, dxValidator: campoObrigatorio  "></div>
+                        <div>Nome completo do Responsável:</div>
+                        <div data-bind="dxTextBox: valorNomeResponsavel"></div>
+                    </div>
+
+                    <div class="dx-field">
+                        <div class="dx-field-label">Sexo:</div>
+                        <div class="dx-field-value" data-bind="dxRadioGroup: valorSexo, dxValidator: campoObrigatorio "></div>
+                    </div>
+
+                    <div class="dx-field">
+                        <div class="dx-field-label">CPF:</div>
+                        <div class="dx-field-value" data-bind="dxTextBox: valorCPF"></div>
+                    </div>
+
+                    <div class="dx-field">
+                        <div class="dx-field-label">Nº Identidade:</div>
+                        <div  class="dx-field-value" data-bind="dxTextBox: valorRG"></div>
+                    </div>
+
+                    <div class="dx-field">
+                        <div class="dx-field-label">Orgão Emissor:</div>
+                        <div class="dx-field-value" data-bind="dxTextBox: valorOrgaoEmissor "></div>
+                    </div>
+
+                    <div class="dx-field">
+                        <div class="dx-field-label">Data Nasc.:</div>
+                        <div id="id" class="dx-field-value" data-bind="dxTextBox: valorDatadeNasc"></div>
+                    </div>
+
+                    <div class="dx-field">
+                        <div class="dx-field-label">Telefone Res:</div>
+                        <div>
+                            <div  id="ddd" data-bind="dxTextBox: valorDDDtel "></div>
+                            <div  id="telefone" data-bind="dxTextBox: valorTelefone"></div>
+                        </div>       
+                    </div>
+                   
+                    <div class="dx-field">
+                        <div class="dx-field-label">Telefone Cel:</div>
+                        <div>
+                            <div  id="ddd" data-bind="dxTextBox: valorDDDcel"></div>
+                            <div  id="telefone" data-bind="dxTextBox:  valorCelular "></div>
+                        </div>        
+                    </div>
+                    <div class="dx-field">
+                        <div class="dx-field-label">Email:</div>
+                        <div class="dx-field-value" data-bind="dxTextBox: valorEmail"></div>
+                    </div>
+                </div>
+                <br />
+
+                <div class="dx-fieldset">
+                    <div class="dx-fieldset-header">Dados do Exame</div>
+                    <div class="dx-field">
+                        <h5>Descreva abaixo os exames que constam em seu pedido médico</h5>
+                        <div data-bind="dxTextArea: ValorExamesPedidosMedicos"></div>
+                        <br />
+                        <h5>Medicações em uso</h5>
+                        <div data-bind="dxTextArea: ValorMedicasoesEmUso">
+                        </div>
+                        <br />
+                        <h5>Se quiser, pode inserir uma imagem do pedido médico.</h5>                  
+                        <div  data-bind="dxButton:{
+                             onClick: capturePhoto,
+                             type: 'danger',
+                             text: 'capturar',
+                             icon: 'fa fa-camera-retro fa-lg'
+                             }"></div>
+                        <img style="display:none;width:120px;height:120px;" id="smallImage" src="" />
+                    </div>
+                </div>
+                <br />
+
+                <!--<div class="dx-fieldset">
+                    <div class="dx-fieldset-header">Data da coleta</div>
+                    <div data-bind="dxDateBox:  valorDataParaColeta, dxValidator: campoObrigatorio "></div>
+                </div>-->
+
+                <div id="btn-enviarform" data-bind="dxButton: {
+                             text: 'Enviar Formulário',
+                             type: 'danger',
+                             onClick : EnviarPreAgendamentoColeta
+                             }"></div>
+
+
+            </div>
+        </div>
+    </div>
+
+</div>
+

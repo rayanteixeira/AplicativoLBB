@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>e6085925-52f4-4d51-a70a-efffa88a92bf</ProjectGuid>
+    <AutoAssignPort>True</AutoAssignPort>
+    <RunInSimulator>True</RunInSimulator>
+    <UploadPluginsToTheCourier>True</UploadPluginsToTheCourier>
+    <ApplicationPage>index.html</ApplicationPage>
+    <RootNamespace>LBB</RootNamespace>
+    <Name>LBB</Name>
+    <KeyApkPath>..\..\appLbb\appLBB-knockout\appLBB-knockout\certificates\android_certificate.p12</KeyApkPath>
+    <KeyApkAlias>tmpl</KeyApkAlias>
+    <ApkDexFilePackageName>br.com.lbb.LBB</ApkDexFilePackageName>
+    <VersionCode>4</VersionCode>
+    <TemplateFileApk />
+    <UseCustomTemplateNameApk>False</UseCustomTemplateNameApk>
+    <KeyDebuggable>False</KeyDebuggable>
+    <ScreenOrientation>Portrait</ScreenOrientation>
+    <ApplicationTitle>LBB</ApplicationTitle>
+    <VersionPackage>1.0.0.2</VersionPackage>
+    <ShowSplashScreen>True</ShowSplashScreen>
+    <XapPackagePublisherID>{a9f51833-a811-46d7-97bf-1382445c375d}</XapPackagePublisherID>
+    <XapPackageProductID>{03f737c1-f491-4b06-90ca-4041de0a8df4}</XapPackageProductID>
+    <TemplateFileXap />
+    <UseCustomTemplateNameXap>False</UseCustomTemplateNameXap>
+    <XapSupportedLanguages>pt-BR</XapSupportedLanguages>
+    <DefaultLanguageXAP>pt-BR</DefaultLanguageXAP>
+    <PhoneGapTokenKey>
+    </PhoneGapTokenKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="css\android5.light.custom.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="css\ios7.default.custom.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="index.js" />
+    <Content Include="cordova.js" />
+    <Content Include="index.html" />
+    <Content Include="index.css" />
+    <Content Include="views\about_screen.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\about_screen.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\home.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\home.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\home.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\imagens\abrinq.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\imagens\acesso-medico.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\imagens\anima.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\imagens\coleta_domiciliar.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\imagens\facebook.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\imagens\heliooliveira.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\imagens\ic_check.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\imagens\ic_uncheck.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\imagens\instagram.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\imagens\lab-coleta.jpg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\imagens\lab-doutor.jpg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\imagens\labmamae-foto1.jpg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\imagens\labmamae-foto2.jpg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\imagens\labmamae-foto3.jpg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\imagens\lab_mamae.jpg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\imagens\lbb.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\imagens\logo_lbb_iso.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\imagens\para-gestantes.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\imagens\resultados-de-exames2.jpg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\imagens\resultados_de_exames.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\imagens\saudenacidade.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\imagens\selo-pelm.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\imagens\twitter.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\imagens\unidades\semfoto.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\imagens\unidades_de_atendimento.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\labcoleta_form.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\labcoleta_form.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\labcoleta_login.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\labcoleta_login.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\labdoutor_home.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\labdoutor_home.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\labdoutor_login.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\labdoutor_login.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\labmamae_screen.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\labmamae_screen.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\labnet_home.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\labnet_home.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\labnet_login.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\labnet_login.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\phone_screen.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\phone_screen.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\unidade_screen.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\unidade_screen.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\unidade_selected.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\unidade_selected.js">
+      <SubType>Content</SubType>
+    </Content>
+    <None Include="certificates\android_certificate.p12" />
+    <None Include="config.xml" />
+    <Content Include="css\dx.spa.css" />
+    <Content Include="css\dx.common.css" />
+    <Content Include="css\dx.contrast.compact.css" />
+    <Content Include="css\dx.contrast.css" />
+    <Content Include="css\dx.dark.compact.css" />
+    <Content Include="css\dx.light.compact.css" />
+    <Content Include="css\dx.android5.light.css" />
+    <Content Include="css\dx.light.css" />
+    <Content Include="css\dx.dark.css" />
+    <Content Include="css\dx.ios7.default.css" />
+    <Content Include="css\dx.win8.black.css" />
+    <Content Include="css\dx.win8.white.css" />
+    <Content Include="css\icons\dxicons.eot" />
+    <Content Include="css\icons\dxicons.ttf" />
+    <Content Include="css\icons\dxicons.woff" />
+    <Content Include="css\icons\dxiconsios.eot" />
+    <Content Include="css\icons\dxiconsios.ttf" />
+    <Content Include="css\icons\dxiconsios.woff" />
+    <Content Include="layouts\Navbar\NavbarLayout.css" />
+    <Content Include="layouts\Navbar\NavbarLayout.html" />
+    <Content Include="layouts\Navbar\NavbarLayout.js" />
+    <Content Include="layouts\Pivot\PivotLayout.css" />
+    <Content Include="layouts\Pivot\PivotLayout.html" />
+    <Content Include="layouts\Pivot\PivotLayout.js" />
+    <Content Include="layouts\SlideOut\SlideOutLayout.js" />
+    <Content Include="layouts\SlideOut\SlideOutLayout.css" />
+    <Content Include="layouts\SlideOut\SlideOutLayout.html" />
+    <Content Include="layouts\Empty\EmptyLayout.js" />
+    <Content Include="layouts\Empty\EmptyLayout.css" />
+    <Content Include="layouts\Empty\EmptyLayout.html" />
+    <Content Include="layouts\Simple\SimpleLayout.js" />
+    <Content Include="layouts\Simple\SimpleLayout.css" />
+    <Content Include="layouts\Simple\SimpleLayout.html" />
+    <Content Include="layouts\Popup\PopupLayout.js" />
+    <Content Include="layouts\Popup\PopupLayout.css" />
+    <Content Include="layouts\Popup\PopupLayout.html" />
+    <Content Include="layouts\Desktop\DesktopLayout.js" />
+    <Content Include="layouts\Desktop\DesktopLayout.css" />
+    <Content Include="layouts\Desktop\DesktopLayout.html" />
+    <Content Include="layouts\Split\SplitLayout.js" />
+    <Content Include="layouts\Split\SplitLayout.css" />
+    <Content Include="layouts\Split\SplitLayout.html" />
+    <Content Include="js\localization\dx.all.de.js" />
+    <Content Include="js\localization\dx.all.ja.js" />
+    <Content Include="js\localization\dx.all.ru.js" />
+    <Content Include="js\dx.all.js" />
+    <Content Include="js\dx.all.debug.js" />
+    <Content Include="js\globalize.min.js" />
+    <Content Include="js\jquery-1.11.3.min.js" />
+    <Content Include="js\jquery-2.1.4.min.js" />
+    <Content Include="js\knockout-3.3.0.js" />
+    <Content Include="views\home.html" />
+    <Content Include="app.config.js" />
+    <None Include="Resources\PackageIcons.Android.ic_launcher_36_36.png" />
+    <None Include="Resources\PackageIcons.Android.ic_launcher_48_48.png" />
+    <None Include="Resources\PackageIcons.Android.ic_launcher_72_72.png" />
+    <None Include="Resources\PackageIcons.Android.ic_launcher_96_96.png" />
+    <None Include="Resources\PackageIcons.Android.splash_200_320.png" />
+    <None Include="Resources\PackageIcons.Android.splash_320_480.png" />
+    <None Include="Resources\PackageIcons.Android.splash_480_800.png" />
+    <None Include="Resources\PackageIcons.Android.splash_720_1280.png" />
+    <None Include="Resources\PackageIcons.WP.ApplicationIcon_99_99.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="certificates\" />
+    <Folder Include="css\" />
+    <Folder Include="css\icons\" />
+    <Folder Include="js\" />
+    <Folder Include="js\localization\" />
+    <Folder Include="layouts\" />
+    <Folder Include="layouts\Desktop\" />
+    <Folder Include="layouts\Empty\" />
+    <Folder Include="layouts\Navbar\" />
+    <Folder Include="layouts\Pivot\" />
+    <Folder Include="layouts\Popup\" />
+    <Folder Include="layouts\Simple\" />
+    <Folder Include="layouts\SlideOut\" />
+    <Folder Include="layouts\Split\" />
+    <Folder Include="Resources\" />
+    <Folder Include="views\" />
+    <Folder Include="views\imagens" />
+    <Folder Include="views\imagens\unidades" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+  <Target Name="Build">
+    <!--
+    <Message Text="'$(MSBuildToolsPath)'"></Message>
+    -->
+    <Message Text="Build JSProject '$(MSBuildProjectFile)':" Importance="high">
+    </Message>
+    <Message Text="Copying references to output dir." Importance="high" />
+    <MSBuild Targets="Build" Projects="@(ProjectReference)" Properties="OutputPath=$([System.IO.Path]::GetFullPath('$(OutputPath)'))">
+    </MSBuild>
+    <Message Text="Copying files to output dir." Importance="high" />
+    <Copy SourceFiles="@(Content)" DestinationFiles="@(Content->'$(OutputPath)%(RelativeDir)%(Filename)%(Extension)')" />
+    <Message Text="Finished Build JSProject '$(MSBuildProjectFile)'." Importance="high">
+    </Message>
+  </Target>
+  <Target Name="CreateManifestResourceNames" Condition="'@(ResxWithNoCulture)@(ResxWithCulture)@(NonResxWithNoCulture)@(NonResxWithCulture)'!=''" />
+  <Target Name="Rebuild" DependsOnTargets="Clean;Build">
+  </Target>
+  <Target Name="Clean">
+    <!--
+    <Message Text="Cleaning Output files..." Importance="high" />
+    <Delete Files="@([System.IO.Path]::GetFullPath('$(OutputPath)'))" />
+    -->
+    <Message Text="Cleaning Output dir ($([System.IO.Path]::GetFullPath('$(OutputPath)')))..." Importance="high" />
+    <RemoveDir Directories="$([System.IO.Path]::GetFullPath('$(OutputPath)'))" />
+  </Target>
+</Project>

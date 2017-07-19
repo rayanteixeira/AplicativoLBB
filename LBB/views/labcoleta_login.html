@@ -1,0 +1,55 @@
+﻿<div data-options="dxView : { name: 'labcoleta_login', title: 'Coleta Domicilia' } ">
+    <div id="boxColeta" class="labcoleta-view dx-content-background" data-options="dxContent : { targetPlaceholder: 'content' } ">
+        
+        <!--useNative: false-->
+        <div id="scroll-labcoletalogin" data-bind="dxScrollView: {showScrollbar: 'never'}">
+            <div id="div_imagem_labcoleta">
+                <img id="imgloginlabcoleta" src="views/imagens/lab-coleta.jpg" />
+            </div>
+
+            <div id="entrada_de_dados_login_labcoleta">
+                <spam> Login: </spam>
+                <div data-bind="dxTextBox: {
+                               placeholder: userPlaceholder,
+                               value: usuario,
+                               maxLength: 40 },
+                               dxValidator: uservalidade"></div>
+                <spam> Senha: </spam>
+                <div data-bind="dxTextBox: {value : senha,
+                                mode: 'password',
+                               placeholder: passwordPlaceholder,
+                               maxLength: 40 },
+                               dxValidator: passwordvalidade"></div>
+            </div>
+
+
+            <div class="loadpanel" data-bind="dxLoadPanel: loadOptions"></div>
+            <div id="botoes_footer_labcoleta">
+                <div id="checkbox-loginlabcoleta" data-bind="dxCheckBox: checkboxLoginColeta"></div>
+
+                <div id="div-botoes">
+                    <div id="btn-entrarAgendaLogin" data-bind="dxButton: {
+                    text: 'Entrar',
+                    type: 'danger',
+                    onClick: validarElogar
+                }"></div>
+
+                    <div id="btn-cadastrarAgendaLogin" data-bind="dxButton: {
+                    text: 'Não sou cadastrado',
+                    type: 'danger',
+                    onClick: naosoucadastrado
+                }"></div>
+                </div>
+
+                <h6> *Informe o login e senha presentes no seu protocolo.</h6>
+                <!--<h6><a href="#">Esqueci minha senha.</a></h6>-->
+
+            </div>
+        </div>
+        </div>
+</div>
+
+
+
+
+
